@@ -1,4 +1,4 @@
-package com.vksdeveloperblog.ws.clients.web_client;
+package com.vksdeveloperblog.ws.clients.photowebclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
