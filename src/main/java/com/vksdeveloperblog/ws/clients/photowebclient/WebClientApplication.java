@@ -2,6 +2,8 @@ package com.vksdeveloperblog.ws.clients.photowebclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class WebClientApplication {
@@ -10,4 +12,8 @@ public class WebClientApplication {
 		SpringApplication.run(WebClientApplication.class, args);
 	}
 
+	@Bean
+	public RestTemplate getRestTemplate() {
+		return new RestTemplate();
+	}
 }
